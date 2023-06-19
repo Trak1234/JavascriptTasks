@@ -497,3 +497,81 @@ function factorial(n){
 }
 
 console.log(factorial(1))
+
+
+
+// перевернуть строку
+function solution(str){
+    return str.split('').reverse('').join('');
+  }
+
+
+  function numberToString(num) {
+    let str = '';
+    return str += num
+  }
+
+  console.log(numberToString(typeof(123)));
+
+
+  /* Создайте функцию с двумя аргументами, которая вернет массив из первых n чисел, кратных x.
+
+Предположим, что и заданное число, и количество раз для подсчета будут положительными числами, большими 0.
+
+Возвращает результаты в виде массива или списка ( в зависимости от языка ). */
+
+
+function countBy(x, n) {
+    let z = [];
+    for (let i =1; i <= n; i++){
+         z.push(i*x);
+        
+    }
+    return z;
+  }
+
+console.log(countBy(2,5));
+
+
+function makeNegative(num) {
+    if( num < 0){
+        return num;
+    } else {
+        return -num;
+    }
+}
+
+console.log(makeNegative(-123));
+
+
+/* Напишите программу, которая находит суммирование каждого числа от 1 до num. Число всегда будет положительным целым числом, большим 0.
+
+Например (Ввод -> Вывод): */
+
+var summation = function (num) {
+    let str = 0;
+    
+    return str;
+  }
+
+console.log(summation(8));
+
+let num = 8;
+for (let i = 1; i <= num.length; i++){
+     console.log(num[i] + num[i+1]);
+    
+}
+
+const sumNumber = (num) => {
+    let z = [];
+    for(let i = 1; i <= num; i++){
+        z.push(i);
+    }
+    let total = 0;
+    for(let key in z ){
+        total += z[key];
+    }
+    return total;
+}
+
+console.log(sumNumber(8));
